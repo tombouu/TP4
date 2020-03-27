@@ -37,3 +37,16 @@ function range(min,max,step) {
     }
     return t;
 }
+
+function nbOccurences(text, mot){
+    let tab = text.split(" ");
+    let n = tab.length;
+    let nb = 0;
+    for (let i = 0; i < n; i++) {
+        if (tab[i]==mot) {
+            nb++;
+        }
+        
+    }
+    return nb;
+}
