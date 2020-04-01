@@ -50,3 +50,33 @@ function nbOccurences(text, mot){
     }
     return nb;
 }
+
+function flatten2D(tab){
+    let nC = tab.length;
+    let tab2 =[];
+    let k=0;
+    for (let i = 0; i < nC; i++) {
+        for (let y = 0; y < tab[i].length; y++) {
+                tab2[k++] = tab[i][y];  
+        }
+        
+    }
+    return tab2;
+}
+
+function end(tab,word){
+    console.log(tab.toString());
+    tab.pop();
+    tab.push(word);
+    return tab;
+}
+
+function multiple(){
+    let tab=[[],[],[],[],[],[],[],[],[],[]];
+    for (let i = 0; i <= 9; i++) {
+        for (let y = 0; y <= 9; y++) {
+            tab[i][y]=i*y;    
+        }
+    }
+    return tab;
+}
